@@ -1,6 +1,6 @@
 import React from "react";
 
-function AttendanceList({ records }) {
+function AttendanceList({ records, onEdit, onDelete }) {
   const groupedRecords = records.reduce((acc, record) => {
     if (!acc[record.className]) {
       acc[record.className] = [];
@@ -17,7 +17,11 @@ function AttendanceList({ records }) {
           <h3>{className}</h3>
           <ul>
             {groupedRecords[className].map((record, index) => (
-              <li key={index}>{record.attendanceDate}</li>
+              <li key={index}>
+                {record.attendanceDate}
+                <button onClick={() => onEdit(record)}>Edit</button>
+                <button onClick={() => onDelete(record)}>Delete</button>
+              </li>
             ))}
           </ul>
         </div>
