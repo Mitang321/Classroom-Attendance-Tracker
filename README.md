@@ -4,7 +4,7 @@ A simple attendance management system built with React. This project allows user
 
 ## Live Preview
 
-[Live Preview](https://vercel.app/)
+[Live Preview](https://classroom-attendance-tracker.vercel.app/)
 
 ### Installation
 
