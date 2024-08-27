@@ -1,0 +1,21 @@
+.attendance-list {
+  margin-top: 20px;
+}
+
+.class-group {
+  margin-bottom: 20px;
+}
+
+.class-group h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
